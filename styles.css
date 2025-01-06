@@ -1,0 +1,124 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color:lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin: 0;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%; 
+  height: 80%; 
+  margin: auto; 
+}
+
+.image-container,
+.login-container {
+  width: 30%; 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.login-container {
+  background: linear-gradient(135deg, #6e7cfd, #665fd3);
+  padding: 30px 40px;
+  border-radius: 0px 40px 40px 0px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;                       
+  animation: fadeIn 1s ease-out;
+  box-sizing: border-box;
+}
+.image-container{
+  border-radius: 40px 0px 0px 40px;
+  overflow: hidden;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #6e7cfd;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+button.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #6e7cfd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.login-btn:hover {
+  background-color: #5759d7;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
